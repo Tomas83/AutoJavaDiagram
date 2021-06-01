@@ -1,22 +1,30 @@
 
+import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import Prendas.GuardaRopa;
-import Prendas.Prenda;
-import Prendas.Material.Trama;
-
+import Project.*;
+import Project.Prendas.GuardaRopa;
+import Project.Prendas.Prenda;
+import Project.Prendas.Material.Trama;
 
 public class AutoDiagramTest {
-
+	
+	@Test
+	public void fullPackageDiagram() throws ClassNotFoundException
+	{
+		AutoDiagram autoDiagram = new AutoDiagram("Project");
+		System.out.println(autoDiagram.getFullPackageDiagram());
+	}
+	/*
 
 	@Test
 	public void fullPackageDiagram() throws ClassNotFoundException
 	{
-		System.out.println(AutoDiagram.getFullPackageDiagram("Prendas"));
+		System.out.println(AutoDiagram.getFullPackageDiagram("Project"));
 	}
 	@Test
 	public void getEnumConstants()
@@ -53,7 +61,7 @@ public class AutoDiagramTest {
 	@Test
 	  public void getAClass() throws ClassNotFoundException
 	  {
-		List<String> classes = AutoDiagram.getAllClases("Prendas");
+		List<String> classes = AutoDiagram.getAllClases("Project.Prendas");
 		for (int i = 0; i < classes.size(); i++)
 		{
 			String[] temp = classes.get(i).split("\\.");
@@ -61,5 +69,11 @@ public class AutoDiagramTest {
 		}
 	  }
 
+	@Test
+	public void WritePackageDiagram() throws ClassNotFoundException, IOException
+	{
+		AutoDiagram.getFullPackageDiagramInFile("AutoDiagram.txt", "Project");
+		//System.out.println(AutoDiagram.getFullPackageDiagram("Project"));
+	}*/
 }
 

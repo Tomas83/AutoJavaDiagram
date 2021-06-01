@@ -1,0 +1,168 @@
+class  
+{
+	this$1:
+
+}
+class  
+{
+	this$0:AccuWeatherAPI
+
+}
+class AccuWeatherAPI 
+{
+
+	getWeather(String)
+}
+class AccuWeatherHandler 
+{
+
+	fahrenheitToCelsius(int)
+	getTemp(String)
+}
+interface WeatherApiStrategy 
+{
+
+	getTemp(String)
+}
+class ArrowType 
+{
+	utility:String
+	unique:Boolean
+	writtenArrow:String
+	priority:int
+	origin:Class
+	objective:Class
+
+	toString()
+	getPriority()
+	getUnique()
+	getUtility()
+	sameDirrection(List<Class<?>, List<Class<?>)
+	getObjective()
+	getWrittenArrow()
+	getOrigin()
+}
+class AutoDiagram 
+{
+	classes:List
+	packageName:String
+	arrows:List
+
+	getFullPackageDiagram(String)
+	getFullPackageDiagram()
+	getFullPackageDiagramInFile(String, String)
+	getMethodData(Method)
+	getAllClases(String)
+	getClassDiagram(List<Class<?>)
+	getFieldData(Field)
+	getGenericTypeName(Type)
+	getEnumDiagram(List<Class<?>)
+	getClassRelationships(List<Class<?>)
+}
+class insuficientesPrendasARangoDeTemperaturaExceptionextends 
+{
+
+}
+class TipoDeParteException 
+{
+
+}
+class TipoDeParteIncorrectaException 
+{
+
+}
+class Atuendo 
+{
+	prendas:List
+
+	lambda$0(TipoDePrenda, Prenda)
+	checkearPrendas(List<Prenda>)
+	getPrendas()
+	chequearCantidadDePrenda(List<Prenda>, TipoDePrenda, String)
+}
+enum Color 
+{
+	AZUL
+	VERDE
+	AMARILLO
+	ROJO
+	MORADO
+	ROSA
+	NEGRO
+	BLANCO
+	CELSETE
+	NARANJA
+}
+class GuardaRopa 
+{
+
+	generate(int, int)
+	helper(List<List<int[]>, int[], int, int, int)
+	lambda$1(int, int, Prenda)
+	sugerencias(List<Prenda>)
+	sugerencias(List<Prenda>, int, int)
+	sugerencias(List<Prenda>, WeatherApiStrategy, int)
+	getPrendasATemperatura(List<Prenda>, int, int)
+	getMultiplesPrendasDeLista(List<Prenda>, int[])
+	lambda$0(List, int[])
+}
+class Material 
+{
+	tipoDeMaterial:TipoDeMaterial
+	trama:Trama
+
+	getTipoDeMaterial()
+	getTrama()
+}
+enum TipoDeMaterial 
+{
+	ALGODON
+	LANA
+	SEDA
+}
+enum Trama 
+{
+	CUADROS
+	LISO
+	RAYADO
+}
+class Prenda 
+{
+	tipoDePrenda:TipoDePrenda
+	material:Material
+	colorPrincipal:Color
+	colorSecundario:Color
+	temperaturaIdeal:int
+
+	getTemperaturaIdeal()
+	hayColorSecundario()
+	getTipoDePrenda()
+	getMaterial()
+	getColorPrincipal()
+}
+class PrendaBuilder 
+{
+	tipoDePrenda:TipoDePrenda
+	material:Material
+	colorPrincipal:Color
+	colorSecundario:Color
+	temperaturaIdeal:int
+
+	getColorSecundario()
+	setTipoDePrenda(TipoDePrenda)
+	buildPrenda()
+	setMaterial(Material)
+	setColorPrincipal(Color)
+	setColorSecundario(Color)
+	getTipoDePrenda()
+	getMaterial()
+	getColorPrincipal()
+	setTemperaturaIdeal(int)
+}
+enum TipoDePrenda 
+{
+	PARTE_SUPERIOR
+	PARTE_INFERIOR
+	CALZADO
+	ACCESORIO
+}
